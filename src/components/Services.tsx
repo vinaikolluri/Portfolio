@@ -27,7 +27,7 @@ export default function Services() {
     <section id="services" className="py-20 bg-gradient-to-br from-slate-800 to-gray-900 text-white">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold mb-12 text-center">Our Services</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}

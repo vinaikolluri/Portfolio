@@ -7,23 +7,24 @@ export default function Hero() {
       id="home"
       className="min-h-screen flex items-center pt-16 bg-gradient-to-br from-slate-900 to-slate-800 relative"
     >
-      <div className="container mx-auto px-6 flex">
-        <div className="flex-1"> {/* Removed width limit to allow full container usage */}
-          <h1 className="text-5xl font-bold text-white mb-6 whitespace-nowrap"> {/* Added whitespace-nowrap */}
+      <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center">
+        {/* Text Content */}
+        <div className="flex-1 text-center lg:text-left mb-8 lg:mb-0">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
             Securing the Future of
             <span className="text-cyan-400"> DevOps</span>
           </h1>
-          <p className="text-lg text-gray-300 mb-4">
+          <p className="text-sm sm:text-base lg:text-lg text-gray-300 mb-4">
             In today's fast-paced digital landscape, integrating security into the DevOps process is not just an option—it's a necessity. 
             DevSecOps empowers organizations to identify and mitigate vulnerabilities early in the development lifecycle, ensuring robust security 
-            while maintaining agility. By fostering a culture of shared responsibility, we can transform the way teams approach security, 
-            making it a fundamental part of their workflows.
+            while maintaining agility.
           </p>
-          <p className="text-lg text-gray-300 mb-4">
+          <p className="text-sm sm:text-base lg:text-lg text-gray-300 mb-4">
             Join me in embracing DevSecOps to not only safeguard our applications but to enhance overall productivity and innovation. 
             Together, we can build a resilient future.
           </p>
-          <div className="flex gap-4">
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
               href="#contact"
               className="flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg font-semibold text-white transition-colors"
@@ -38,6 +39,10 @@ export default function Hero() {
               View Services
             </a>
           </div>
+        </div>
+        {/* Image or Illustration Section (if needed) */}
+        <div className="flex-1">
+          {/* Placeholder for an image or illustration */}
         </div>
       </div>
     </section>

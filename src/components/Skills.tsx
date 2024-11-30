@@ -38,12 +38,15 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-20 bg-gradient-to-br from-slate-800 to-gray-900 text-white">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-white mb-12 text-center">Skill Set</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <h2 className="text-3xl font-bold mb-12 text-center">Skill Set</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {skills.map((skill, index) => (
-            <div key={index} className="bg-slate-700/30 p-6 rounded-lg group hover:bg-slate-700/50 transition-colors">
+            <div
+              key={index}
+              className="bg-slate-700/30 p-6 rounded-lg group hover:bg-slate-700/50 transition-colors"
+            >
               <div className="text-cyan-400 mb-4 group-hover:scale-110 transition-transform">
                 {skill.icon}
               </div>
